@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- *@Author teacher.guo
- * */
+
 @RestController
 @RequestMapping(value = "/portal/product/")
 public class ProductController {
@@ -19,10 +17,22 @@ public class ProductController {
     private IProductService productService;
 
 
+    /*产品搜索及动态排序List*/
+    @RequestMapping("list.do")
+    public ServerResponse getList(@RequestParam(required = false) Integer categoryId,
+                                  @RequestParam(required = false) String keyword,
+                                  @RequestParam(required = false,defaultValue ="1") Integer pageNum,
+                                  @RequestParam(required = false,defaultValue = "10") Integer pageSize,
+                                  @RequestParam(required = false,defaultValue = "") String orderBy
+    ){
+        ServerResponse sr = productService.getList(categoryId,keyword,pageNum,pageSize,orderBy);
+
+        return sr;
+    }
 
     /*获取产品detail*/
     @RequestMapping("detail.do")
-    public ServerResponse getDetail(Integer productId,
+    public ServerResponse getDetail( Integer productId,
                                     @RequestParam(required = false,defaultValue="0") Integer is_new,
                                     @RequestParam(required = false,defaultValue="0") Integer is_hot,
                                     @RequestParam(required = false,defaultValue="0") Integer is_banner){
@@ -40,5 +50,13 @@ public class ProductController {
         return sr;
     }
 
+
+    /*日志空接口*/
+    @RequestMapping("logempty.do")
+    public ServerResponse logempty(){
+        ServerResponse sr = ServerResponse.createServerResponseBySuccess("调用成功！");
+
+        return sr;
+    }
 
 }

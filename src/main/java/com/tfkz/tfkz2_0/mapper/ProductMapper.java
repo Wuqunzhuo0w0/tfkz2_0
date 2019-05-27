@@ -54,4 +54,5 @@ public interface ProductMapper {
 
     /*根据最新或最热或banner查询商品*/
     List<Product> selectBys_NewAndIs_HotAndIs_Banner(@Param("is_new")Integer is_new,@Param("is_hot")Integer is_hot,@Param("is_banner")Integer is_banner);
+
 }

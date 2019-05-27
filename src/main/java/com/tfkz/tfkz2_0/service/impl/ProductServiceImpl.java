@@ -29,7 +29,7 @@ public class ProductServiceImpl implements IProductService {
     @Override
     public ServerResponse getDetail(Integer productId, Integer is_new, Integer is_hot, Integer is_banner) {
         ServerResponse sr = null;
-
+        System.out.println(productId+"             =-------------------------");
         //判断参数
         if(productId == null && is_new == null && is_hot == null && is_banner == null){
             sr = ServerResponse.createServerResponseByError(Const.ProductStatusEnum.ERROR_PAMAR.getCode(),Const.ProductStatusEnum.ERROR_PAMAR.getDesc());
@@ -78,14 +78,18 @@ public class ProductServiceImpl implements IProductService {
             Product product = null;
             //搜索最新商品
             if(is_new ==1 ){
+                System.out.println("is_New==1");
                 product = productMapper.selectByIdAndIs_New(productId,is_new);
             }
             //搜索最热商品
             else if(is_hot ==1 ){
+                System.out.println("is_hot==1");
                 product = productMapper.selectByIdAndIs_Hot(productId,is_hot);
+                System.out.println(product.toString());
             }
             //搜索banner商品
             else if(is_banner == 1){
+                System.out.println("is_banner==1");
                 product = productMapper.selectByIdAndIs_Banner(productId,is_banner);
             }else{
                 //搜索普通商品
@@ -117,6 +121,14 @@ public class ProductServiceImpl implements IProductService {
 
     @Override
     public ServerResponse topcategory(Integer sid) {
+        ServerResponse sr = null;
+        List<Category> categories = categoryMapper.selectTopCategory(sid);
+        sr = ServerResponse.createServerResponseBySuccess(categories);
+        return sr;
+    }
+
+    @Override
+    public ServerResponse getList(Integer categoryId, String keyword, Integer pageNum, Integer pageSize, String orderBy) {
         return null;
     }
 }

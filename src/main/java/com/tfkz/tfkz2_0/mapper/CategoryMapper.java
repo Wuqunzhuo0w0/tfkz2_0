@@ -43,4 +43,5 @@ public interface CategoryMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(Category record);
+    List<Category> selectTopCategory(Integer sid);
 }

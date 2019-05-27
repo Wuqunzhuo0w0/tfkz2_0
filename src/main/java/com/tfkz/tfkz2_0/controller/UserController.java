@@ -14,9 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-/**
- * @Author teacher.zhang
- */
+
+
 @RestController
 @RequestMapping(value = "/portal/user/")
 public class UserController {

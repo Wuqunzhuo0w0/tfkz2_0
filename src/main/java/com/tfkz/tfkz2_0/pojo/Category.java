@@ -1,6 +1,7 @@
 package com.tfkz.tfkz2_0.pojo;
 
 import java.util.Date;
+import java.util.List;
 
 public class Category {
     /**
@@ -67,6 +68,13 @@ public class Category {
      *
      * @mbggenerated
      */
+
+
+    /**
+     * 子类别
+     */
+    private List<Category> childs;
+
     public Integer getId() {
         return id;
     }
@@ -225,5 +233,12 @@ public class Category {
      */
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+    public List<Category> getChilds() {
+        return childs;
+    }
+
+    public void setChilds(List<Category> childs) {
+        this.childs = childs;
     }
 }

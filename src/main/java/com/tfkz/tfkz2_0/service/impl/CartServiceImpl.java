@@ -49,6 +49,152 @@ public class CartServiceImpl implements ICartService {
         return sendSR(session, insert);
     }
 
+    /*更新购物车某个产品数量*/
+    @Override
+    public ServerResponse updateCart(HttpSession session, Integer productId, Integer count) {
+        ServerResponse sr = getSR(productId, count);
+        if(sr != null){
+            return sr;
+        }
+
+        //设置标识符102
+        int qb = Const.CartCheckedEnum.BZ_GWC.getCode();
+        int insert = existCart(session, productId, count, qb);
+
+        //返回数据
+        return sendSR(session, insert);
+    }
+
+    /*移除购物车某个产品数量*/
+    @Override
+    public ServerResponse deleteProduct(HttpSession session, String productIds) {
+        ServerResponse sr = getSR(productIds);
+        if(sr != null){
+            return sr;
+        }
+
+        //字符串参数转成集合
+        String[] productsLi = productIds.split(",");
+
+        //查询商品是否存在
+        for (String s : productsLi) {
+            Cart c = cartMapper.selectByUidAndProductId(getUid(session), Integer.parseInt(s));
+            if (c == null) {
+                //要移除的商品不存在
+                sr = ServerResponse.createServerResponseByError(Const.CartCheckedEnum.UNEXIST_P.getCode(), Const.CartCheckedEnum.UNEXIST_P.getDesc());
+            } else {
+                //移除选中的商品
+                int insert = cartMapper.deleteByPrimaryKey(c.getId());
+                //返回数据
+                sr = sendSR(session, insert);
+            }
+        }
+        return sr;
+    }
+
+    @Override
+    public ServerResponse selectProduct(HttpSession session, Integer productId) {
+        ServerResponse sr = getSR(productId);
+        if(sr!=null){
+            return sr;
+        }
+        Cart c = cartMapper.selectByUidAndProductId(getUid(session), Integer.valueOf(productId));
+        if (c==null){
+            //信息不存在
+            sr = ServerResponse.createServerResponseByError(Const.CartCheckedEnum.UNEXIST_P.getCode(),Const.CartCheckedEnum.UNEXIST_P.getDesc());
+        }else {
+            //信息存在，设置选中
+            c.setChecked(Const.CartCheckedEnum.PRODUCT_CHECKED.getCode());
+            //更新信息
+            int insert = cartMapper.updateByPrimaryKey(c);
+            //返回数据
+            sr = sendSR(session, insert);
+        }
+        return sr;
+    }
+
+    @Override
+    public ServerResponse unSelectProduct(HttpSession session, Integer productId) {
+        ServerResponse sr = getSR(productId);
+        if(sr != null){
+            return sr;
+        }
+        //找到该用户对应的这条商品信息
+        Cart c = cartMapper.selectByUidAndProductId(getUid(session), productId);
+        if (c == null) {
+            //信息不存在
+            sr = ServerResponse.createServerResponseByError(Const.CartCheckedEnum.UNEXIST_P.getCode(), Const.CartCheckedEnum.UNEXIST_P.getDesc());
+        } else {
+            //信息存在，设置取消选中
+            c.setChecked(Const.CartCheckedEnum.PRODUCT_UNCHECKED.getCode());
+            //更新信息
+            int insert = cartMapper.updateByPrimaryKey(c);
+            //返回数据
+            sr = sendSR(session, insert);
+        }
+        return sr;
+    }
+
+    @Override
+    public ServerResponse getCartProductCount(HttpSession session) {
+        ServerResponse sr = null;
+        //查询用户对应购物信息
+        List<Cart> liCart = cartMapper.selectByUID(getUid(session));
+        sr = ServerResponse.createServerResponseBySuccess(liCart.size());
+        return sr;
+    }
+
+    @Override
+    public ServerResponse selectAllProduct(HttpSession session) {
+        ServerResponse sr = null;
+
+        //查询用户对应购物信息
+        List<Cart> liCart = cartMapper.selectByUID(getUid(session));
+
+        if (liCart == null || liCart.size()<1) {
+            //信息不存在
+            sr = ServerResponse.createServerResponseByError(Const.CartCheckedEnum.UNEXIST_P.getCode(), Const.CartCheckedEnum.UNEXIST_P.getDesc());
+        } else {
+
+            //信息存在，设置全部选中
+            int insert = 0;
+            for (Cart cart : liCart) {
+                cart.setChecked(Const.CartCheckedEnum.PRODUCT_CHECKED.getCode());
+                //更新信息
+                insert = cartMapper.updateByPrimaryKey(cart);
+            }
+            //返回数据
+            sr = sendSR(session, insert);
+        }
+        return sr;
+    }
+
+    @Override
+    public ServerResponse unSelectAll(HttpSession session) {
+        ServerResponse sr = null;
+
+        //查询用户对应购物信息
+        List<Cart> liCart = cartMapper.selectByUID(getUid(session));
+
+        if (liCart == null || liCart.size()<1) {
+            //信息不存在
+            sr = ServerResponse.createServerResponseByError(Const.CartCheckedEnum.UNEXIST_P.getCode(), Const.CartCheckedEnum.UNEXIST_P.getDesc());
+        } else {
+
+            //信息存在，设置全部选中
+            int insert = 0;
+            for (Cart cart : liCart) {
+                cart.setChecked(Const.CartCheckedEnum.PRODUCT_UNCHECKED.getCode());
+                //更新信息
+                insert = cartMapper.updateByPrimaryKey(cart);
+            }
+            //返回数据
+            sr = sendSR(session, insert);
+        }
+        return sr;
+    }
+
+
     /*返回数据统一*/
     private ServerResponse sendSR(HttpSession session) {
         ServerResponse sr = null;
@@ -82,6 +228,24 @@ public class CartServiceImpl implements ICartService {
         ServerResponse sr = null;
         //参数非空判断
         if (productId == null || count == null) {
+            sr = ServerResponse.createServerResponseByError(Const.CartCheckedEnum.EMPTY_PARAM.getDesc());
+        }
+        return sr;
+    }
+
+    private ServerResponse getSR(String productIds) {
+        ServerResponse sr = null;
+        //参数非空判断
+        if (productIds.equals("") || productIds == null) {
+            sr = ServerResponse.createServerResponseByError(Const.CartCheckedEnum.EMPTY_PARAM.getDesc());
+        }
+        return sr;
+    }
+
+    private ServerResponse getSR(Integer productId) {
+        ServerResponse sr = null;
+        //参数非空判断
+        if (productId == null) {
             sr = ServerResponse.createServerResponseByError(Const.CartCheckedEnum.EMPTY_PARAM.getDesc());
         }
         return sr;
@@ -139,8 +303,6 @@ public class CartServiceImpl implements ICartService {
         }
         return insert;
     }
-
-
 
     /*封裝购物车实体类*/
     private CartVO getCartVO(HttpSession session) {

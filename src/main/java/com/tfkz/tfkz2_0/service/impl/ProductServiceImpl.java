@@ -1,6 +1,7 @@
 package com.tfkz.tfkz2_0.service.impl;
 
 
+import com.github.pagehelper.PageInfo;
 import com.tfkz.tfkz2_0.common.Const;
 import com.tfkz.tfkz2_0.common.ServerResponse;
 import com.tfkz.tfkz2_0.mapper.CategoryMapper;
@@ -8,8 +9,10 @@ import com.tfkz.tfkz2_0.mapper.ProductMapper;
 import com.tfkz.tfkz2_0.pojo.Category;
 import com.tfkz.tfkz2_0.pojo.Product;
 import com.tfkz.tfkz2_0.pojo.vo.ProductVO;
+import com.tfkz.tfkz2_0.service.ICategoryService;
 import com.tfkz.tfkz2_0.service.IProductService;
 import com.tfkz.tfkz2_0.utils.POJOtoVOUtils;
+import com.tfkz.tfkz2_0.utils.PaiXuUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +27,10 @@ public class ProductServiceImpl implements IProductService {
 
     @Autowired
     private CategoryMapper categoryMapper;
+
+    //注入后台品类业务层
+    @Autowired
+    private ICategoryService ics;
 
 
     @Override
@@ -129,6 +136,89 @@ public class ProductServiceImpl implements IProductService {
 
     @Override
     public ServerResponse getList(Integer categoryId, String keyword, Integer pageNum, Integer pageSize, String orderBy) {
-        return null;
+        ServerResponse sr = null;
+
+        List<Product> li = new ArrayList<>();
+        List<ProductVO> voList = new ArrayList<>();
+
+        //参数都为空时，报错
+        if(categoryId == null &&(keyword == null || keyword.equals(""))){
+            sr = ServerResponse.createServerResponseByError(Const.ProductStatusEnum.ERROR_PAMAR.getCode(),Const.ProductStatusEnum.ERROR_PAMAR.getDesc());
+            return sr;
+        }
+
+
+        if(categoryId != null ){
+            //递归获取所有子类
+            List data = new ArrayList();
+            ServerResponse<Category> srCategory = ics.getDeepCategory(categoryId);
+            if(srCategory.isSuccess()){
+                data = (List) srCategory.getData();
+            }
+
+            //判断keyword是否为空
+            if(keyword != null && !keyword.equals("")){
+                //关键词模糊查询
+                keyword = "%"+keyword+"%";
+
+                //判断当前分类是否为有子类
+                if(data == null || data.size()==0){
+                    //没有子类的情况
+                    li = PaiXuUtils.px1(orderBy,pageNum,pageSize,categoryId,keyword,productMapper);
+                }else{
+                    //有子类的情况
+                    li = PaiXuUtils.px2(orderBy,pageNum,pageSize,categoryId,keyword,productMapper,data);
+
+                    //li = productMapper.selectByCategoryIdAndKeywordAndData(categoryId,keyword,data);
+                }
+
+            }
+            if(keyword == null || keyword.equals("")){
+                //判断当前分类是否为有子类
+                if(data == null || data.size()==0){
+                    //没有子类的情况
+                    //根据该商品类型查询所有商品数据
+                    li = PaiXuUtils.px3(orderBy,pageNum,pageSize,categoryId,keyword,productMapper);
+
+                    //li = productMapper.selectByCategoryId(categoryId);
+                }else{
+                    //有子类的情况，应该返回所有子类商品
+                    li = PaiXuUtils.px4(orderBy,pageNum,pageSize,categoryId,keyword,productMapper,data);
+
+                    //li = productMapper.selectByCategoryIdAndData(categoryId,data);
+                }
+            }
+        }else{
+            //关键词不为空时查询所有数据
+            if(keyword != null && !keyword.equals("")){
+                //关键词模糊查询
+                keyword = "%"+keyword+"%";
+
+                li = PaiXuUtils.px5(orderBy,pageNum,pageSize,categoryId,keyword,productMapper);
+
+                //li = productMapper.selectByKeyword(keyword);
+            }
+        }
+
+        //集合空值处理
+        if(li == null){
+            li.add(new Product());
+        }
+
+        //转换成productVO类
+        for (Product product : li) {
+            ProductVO aNew = POJOtoVOUtils.getNew(product);
+            voList.add(aNew);
+        }
+
+        //分页处理,传入原始查询数据
+        PageInfo pageInfo = new PageInfo(li,4);
+        //再把封装数据设置进来
+        pageInfo.setList(voList);
+
+
+        //返回结果
+        sr = ServerResponse.createServerResponseBySuccess(pageInfo);
+        return sr;
     }
 }

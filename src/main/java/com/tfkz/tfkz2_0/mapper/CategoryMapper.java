@@ -1,6 +1,8 @@
 package com.tfkz.tfkz2_0.mapper;
 
 import com.tfkz.tfkz2_0.pojo.Category;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface CategoryMapper {
@@ -42,6 +44,11 @@ public interface CategoryMapper {
      *
      * @mbggenerated
      */
+
+    public List<Category> getChilds(@Param("parentId") Integer parentId);
+    public List<Integer> getChildIds(@Param("parentId") Integer parentId);
+    int updateName(@Param("name")String name,@Param("categoryId")Integer categoryId);
+
     int updateByPrimaryKey(Category record);
     List<Category> selectTopCategory(Integer sid);
 }

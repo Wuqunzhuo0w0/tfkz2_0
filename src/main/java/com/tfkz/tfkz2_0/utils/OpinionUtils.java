@@ -36,6 +36,7 @@ public class OpinionUtils {
     /*获取登录用户ID*/
     public static Integer getUID(HttpSession session){
         UserInfo ui = (UserInfo) session.getAttribute(Const.RoleEnum.ROLE_CUSTOMER.getDesc());
+        System.out.println(ui.getId()+" ------------------------");
         return ui.getId();
     }
 }

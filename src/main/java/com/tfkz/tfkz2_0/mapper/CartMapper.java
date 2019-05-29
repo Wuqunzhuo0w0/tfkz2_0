@@ -51,4 +51,7 @@ public interface CartMapper {
 
     /*根据商品ID查询单条信息*/
     Cart selectByUidAndProductId(@Param("uid") Integer uid, @Param("productId") Integer productId);
+
+    /*查询用户对应购物信息以选中的*/
+    List<Cart> selectByUidAndCheckIn(@Param("uid")Integer uid);
 }

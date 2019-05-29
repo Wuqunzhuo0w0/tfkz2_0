@@ -136,16 +136,16 @@ public class PaiXuUtils {
         if(orderBy.equals("")){
             //不需要排序
             PageHelper.startPage(pageNum,pageSize);
-            li = productMapper.selectByKeyword(keyword);;
+            li = productMapper.selectByKeyword(keyword);
         }else{
             //按参数排序
             String[] split = orderBy.split("_");
             if(split.length>1){
                 PageHelper.startPage(pageNum,pageSize,split[0]+""+split[1]);
-                li = productMapper.selectByKeyword(keyword);;
+                li = productMapper.selectByKeyword(keyword);
             }else{
                 PageHelper.startPage(pageNum,pageSize);
-                li = productMapper.selectByKeyword(keyword);;
+                li = productMapper.selectByKeyword(keyword);
             }
         }
 

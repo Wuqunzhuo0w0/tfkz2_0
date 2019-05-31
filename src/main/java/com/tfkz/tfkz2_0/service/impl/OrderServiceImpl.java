@@ -480,7 +480,8 @@ public class OrderServiceImpl implements IOrderService {
         String str = JsonUtils.obj2String(POJOtoVOUtils.getBizContent(order, orderItems));
         request.setBizContent(str);
         //设置支付宝回调路径
-        request.setNotifyUrl(Configs.getNotifyUrl_realy());
+        //request.setNotifyUrl(Configs.getNotifyUrl_realy());
+         request.setNotifyUrl(Configs.getNotifyUrl_test());
         //获取响应,这里要处理一下异常
         AlipayTradePrecreateResponse response = alipayClient.execute(request);
 

@@ -1,0 +1,452 @@
+
+<!DOCTYPE HTML>
+
+
+<html style="background-color: #1FBBA6">
+<head>
+<title>同福客栈</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="酒水电商，同福客栈项目组，同福客栈，东软睿道同福客栈" />
+<script type="applijegleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
+<link href="../css/gallery.css" rel='stylesheet' type='text/css' />
+<script src="../js/jquery-1.11.1.min.js"></script>
+<link href='#css?family=Source+Sans+Pro:400,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+		<div class="banner" id="home">
+				 <div class="header-top">
+					<div class="logo"><!--logo-->
+						<a href="main.html"><h1>同福客栈</h1></a>
+					</div>
+				<div class="cssmenu">
+				<ul style=" font:15px verdana, arial, sans-serif; float: left; margin-left: 20% ; display:inline-block;list-style: none; size: 50px;margin-top: 15px" >
+					<li style="float: left;margin-top:8px;display: block" id="signIn"><a href="login.html">亲~请登录哟</a></li>
+					<li style="float: left;margin-top:8px;margin-left:20px;display: none;" id="signOut"><a href="login.html">点击注销</a></li>
+				</ul>
+				<ul style=" font:15px verdana, arial, sans-serif; float: left; margin-left: 50px ; display:inline-block;list-style: none; size: 50px;margin-top: 15px" >
+					<li style="float: left;margin-top:8px;display: none" id="userCenter"><a href="#">用户中心</a></li>
+				</ul>
+				</div>
+				<span class="menu"> </span>
+				<div class="top-menu">
+				<nav class="cl-effect-16">
+					<ul>
+						<li><a class="active scroll" href="#home" data-hover="Home">首页</a></li>
+						<li><a class="scroll" href="#service" data-hover="Services">酒类</a></li>
+						<li><a class="scroll" href="#products" data-hover="Products">水类</a></li>
+						<li><a class="scroll" href="#gallery" data-hover="Gallery">热销榜单</a</li>
+						<li><a class="scroll" data-hover="Gallery">购物车</a></li>
+						<li><a class="scroll" href="#team" data-hover="Team">关于我们</a></li>	
+						<div class="clearfix"></div>
+					</ul>
+				</nav>		
+				</div>
+				<!-- script-for-menu -->
+								<script>
+									$("span.menu").click(function(){
+										$(".top-menu ul").slideToggle("slow" , function(){
+										});
+									});
+								</script>
+								<!-- script-for-menu -->
+				<div class="clearfix"></div>
+			<!-- script-for-menu -->
+		   </div>
+		<!--banner-->
+			<span class="right">
+			<input type="text" name="as_q" class="box" id="searched_content" title="在此输入搜索内容。"/>
+			<input type="submit" value="搜索" class="button1" title="搜索！" />
+			</span>
+	<div class="container">		
+		<div class="inner-slider">
+		     <div class="col-md-5 banner-slider">
+				<div  id="top" class="callbacks_container">
+						<ul class="rslides" id="slider4">
+						<li>
+						  <div class="banner-info">
+						     <h3>100%的纯有机!</h3>
+							  <p>魅力彰显卓越，传世红酒典藏，于人生巅峰，品味在红酒里，徜徉在微风中，共舞在星空下，回味在梦乡里，尽享那一抹醉人的红。</p>
+						  </div>
+						</li>
+						  <div class="banner-info">
+						   <h3>皇家优质葡萄酒</h3>
+						  <p>当一滴尊贵溶解呢喃，品味在昇华中渲染，如时光被岁月饱含<lable>卢瓦尔河谷萨榭城堡里，同巴尔扎克一起感受红果的辛烈香味</lable>雨水，阳光，人生百味，都沉淀于此</p>		 
+						 </div>
+						<li>
+					     <div class="banner-info">
+						    <h3>原味法国！</h3>
+						    <p>典雅人生，非凡享受——法国福禄干红<lable>品质舒心，喝得放心</lable> </p>
+						  </div>
+						</li>
+					</ul>
+			     </div>
+			   </div>
+			  <div class="col-md-7 banner-pic">
+			   <img class="img-responsive " src="../images/b-pic.png" alt="法国葡萄酒" />
+			 </div>
+			  <div class="clearfix"></div>
+			 </div>
+		</div>
+   </div>
+		<!--banner-样式-->
+					<script src="../js/responsiveslides.min.js"></script>
+				   <script>
+					$(function () {
+					  // Slideshow 4
+					  $("#slider4").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: true,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						  $('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+						  $('.events').append("<li>after event fired.</li>");
+						}
+					  });
+				
+					});
+				  </script>
+			 <!--//banner-样式-->
+	</div>
+	<!--酒类-->
+	<div class="services" id="service">
+		<!-- container -->
+		<div class="container">
+		   <h3 class="tittle">酒类</h3>
+			<div class="serve-grids">
+				<div class="serve-grids-top">
+					<div class="col-md-3 service-box">
+							<img class="img1" src="../images/莫吉托.jpg" alt="莫吉托"/>
+						<h5>莫吉托 Mojito</h5>
+						<p>莫吉托是一种由五种材料制成的鸡尾酒，最有名的朗姆调酒之一，起源于古巴。</p>
+					</div>
+					<div class="col-md-3 service-box">
+							<img class="img2" src="../images/科罗娜.jpg" alt="科罗娜"/>
+						<h5>科罗娜 CORONAEXTRA</h5>
+						<p>其独特的透明瓶包装以及饮用时添加白柠檬片的特别风味，在美国一度深受时尚青年的青睐</p>
+					</div>
+					<div class="col-md-3 service-box">
+							<img class="img3" src="../images/巴黎之花限量桃红香槟.jpg" alt="巴黎之花限量桃红香槟"/>
+						<h5>巴黎之花限量桃红香槟</h5>
+						<p>采收、压榨后，浸泡红葡萄皮4至30小时不等,之后进行酒精发酵，二次发酵成为桃红香槟。</p>
+					</div>
+					<div class="col-md-3 service-box">
+							<img class="img4" src="../images/梦思花园之梦限量版.jpg" alt="梦思花园之梦限量版"/>
+						<h5>梦思花园之梦限量版</h5>
+						<p>白葡萄酒，用优质葡萄酿制，参照国际名牌葡萄酒生产工艺，经发酵陈酿而成</p>
+					</div>
+					<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!--水类-->
+	<div class="products" id="products">	
+		   <div class="container">
+		    <h3 class="tittle">水类</h3>
+			<ul id="flexiselDemo3">
+				<li>
+					<div class="biseller-column">
+					<a class="lightbox" href="#goofy">
+								   <img src="../images/s1.jpg"/>
+								</a> 
+								<div class="lightbox-target" id="goofy">
+									  <img src="../images/s1.jpg"/>
+								   <a class="lightbox-close" href="#"> </a>
+
+									<div class="clearfix"> </div>
+								</div>
+					</div>
+				</li>
+				<li>
+					<div class="biseller-column">
+					<a class="lightbox" href="#goofy">
+								  <img src="../images/s4.jpg"/>
+								</a> 
+								<div class="lightbox-target" id="goofy">
+									  <img src="../images/s4.jpg"/>
+								   <a class="lightbox-close" href="#"> </a>
+
+									<div class="clearfix"> </div>
+								</div>
+					</div>
+				</li>
+				<li>
+					<div class="biseller-column">
+					<a class="lightbox" href="#goofy">
+								  <img src="../images/s3.jpg"/>
+								</a> 
+								<div class="lightbox-target" id="goofy">
+									  <img src="../images/s3.jpg"/>
+								   <a class="lightbox-close" href="#"> </a>
+
+									<div class="clearfix"> </div>
+								</div>
+					</div>
+				</li>
+				<li>
+					<div class="biseller-column">
+					<a class="lightbox" href="#goofy">
+								    <img src="../images/s1.jpg"/>
+								</a> 
+								<div class="lightbox-target" id="goofy">
+									<img src="../images/s1.jpg"/>
+								   <a class="lightbox-close" href="#"> </a>
+
+									<div class="clearfix"> </div>
+								</div>
+					</div>
+				</li>
+				<li>
+					<div class="biseller-column">
+					<a class="lightbox" href="#goofy">
+								  <img src="../images/s2.jpg"/>
+								</a> 
+								<div class="lightbox-target" id="goofy">
+									  <img src="../images/s2.jpg"/>
+								   <a class="lightbox-close" href="#"> </a>
+
+									<div class="clearfix"> </div>
+								</div>
+					</div>
+				</li>
+				<li>
+					<div class="biseller-column">
+					<a class="lightbox" href="#goofy">
+								   <img src="../images/s1.jpg"/>
+								</a> 
+								<div class="lightbox-target" id="goofy">
+									<img src="../images/s1.jpg"/>
+								   <a class="lightbox-close" href="#"> </a>
+
+									<div class="clearfix"> </div>
+								</div>
+					</div>
+				</li>
+				<li>
+					<div class="biseller-column">
+								<a class="lightbox" href="#goofy">
+								    <img src="../images/s2.jpg"/>
+								</a> 
+								<div class="lightbox-target" id="goofy">
+									<img src="../images/s2.jpg"/>
+								   <a class="lightbox-close" href="#"> </a>
+									
+									<div class="clearfix"> </div>
+								</div>
+					</div>
+				</li>
+	     	</ul>
+			</div>
+			<script type="text/javascript">
+				 $(window).load(function() {
+					$("#flexiselDemo3").flexisel({
+						visibleItems:4,
+						animationSpeed: 1000,
+						autoPlay: true,
+						autoPlaySpeed: 3000,    		
+						pauseOnHover: true,
+						enableResponsiveBreakpoints: true,
+				    	responsiveBreakpoints: { 
+				    		portrait: { 
+				    			changePoint:480,
+				    			visibleItems:3
+				    		}, 
+				    		landscape: { 
+				    			changePoint:640,
+				    			visibleItems:3
+				    		},
+				    		tablet: { 
+				    			changePoint:768,
+				    			visibleItems:3
+				    		}
+				    	}
+				    });
+				    
+				});
+			   </script>
+			   <script type="text/javascript" src="../js/jquery.flexisel.js"></script>
+			</div>   
+		</div>
+	</div>   
+</div>
+<!--热销榜单-->
+<div class="gallery" id="gallery">
+	<div class="container">
+	  <h3 class="tittle">热销榜单</h3>
+			<div class="gallery-bottom">
+			     <div class="view view-ninth">
+                   <a href="../images/热销榜单1.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="../images/热销榜单1.jpg" alt="血腥玛丽" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>克伦堡凯旋 1664白啤酒</h2>
+                        <p>1664一直坚持采用只产自阿尔萨斯省的啤酒花“Strisselspalt Hop”，堪称“酒花之中的鱼子酱”，并加入芫茜，柑橘等原料，带给这款啤酒与众不同芬芳与口感，淡淡回甘又有一丝水果清香。</p>
+                    </div>
+                </div>
+              <div class="view view-ninth">
+                   <a href="../images/热销榜单2.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="../images/热销榜单2.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>张裕赤霞珠干红葡萄</h2>
+                        <p>张裕赤霞干红葡萄酒系选用优良酿酒品种赤霞珠为原料，经控制温发醇工艺精心酿制而成的一种干型葡萄酒。本品香气浓郁、滋味醇厚协调、柔和圆润、酒体丰满。</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                 <div class="view view-ninth">
+                   <a href="../images/g3.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="../images/g3.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>露薇芳苔桃红香槟</h2>
+                        <p>法国原装进口，传统香槟酿制法，口感清新，绵延持久，酒色清新亮丽，果香浓郁，酒质醇厚，深受喜爱。</p>
+                    </div>
+                </div>
+                <div class="view view-ninth">
+                   <a href="../images/g4.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="../images/g4.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>火龙果芝芝</h2>
+                        <p>冰凉舒爽的口感滑过舌尖，冰力十足，让人在这燥热的夏天里得到一丝丝清凉的慰藉。</p>
+                    </div>
+                </div>
+               <div class="view view-ninth">
+                   <a href="../images/g5.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="../images/g5.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>奇异果可达达</h2>
+                        <p>奇异果汁对人类的血液有明显净化作用，它可减少胆固醇的生成，也能扩张血管，降低血压，另外奇异果汁还能营养心肌，增加心脏活性。</p>
+                    </div>
+                </div>
+                 <div class="view view-ninth">
+                   <a href="../images/g6.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="../images/g6.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>水果风暴</h2>
+                        <p>正值盛夏，补水很重要，只喝白开水？不妨试试品尝水果风暴，养生保健，颜值高，而且每种成分都有独特的作用。</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+	</div>
+</div>
+<link rel="stylesheet" href="../css/swipebox.css">
+	<script src="../js/jquery.swipebox.min.js"></script>
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+</script>
+<!--关于我们-->
+		<div class="team" id="team">
+	      <div class="container">
+			 <h3 class="tittle">关于我们</h3>
+			<div class="main">
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item">	
+							<div class="ch-info">
+								<h3>前端</h3>
+								<p>李佳霏 许科全 王子闻</br></br>网页编程html+css、图片制作&nbsp;&nbsp;</br> 连接前后台jQuery Ajax&nbsp;&nbsp;</br>JavaScrip、图片收集&nbsp;&nbsp;</p>
+							</div>
+							<div class="ch-thumb ch-img-1"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item">
+							<div class="ch-info">
+								<h3>后端</h3>
+								<p>武群卓 周文淼</br></br>使用SpringBoot和MyBatis</br>框架搭建后台</br>构建数据库</p>
+							</div>
+							<div class="ch-thumb ch-img-2"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item">
+							<div class="ch-info">
+								<h3>测试</h3>
+								<p>夏镇坤 赵鹏</br></br>测试程序</br>收集数据</p>
+							</div>
+							<div class="ch-thumb ch-img-3"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+       </div>
+<!--关于我们-->
+	<div class="copy">
+		<p>购买前请确认达到法定饮酒年龄！同福客栈不销售含酒精产品给18岁以下人士</br>Copyright &copy; 2019-同福客栈 版权所有</p>
+	</div>
+	<!--start-smoth-scrolling-->
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<!--
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+								</script>
+						-->
+
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+<script>
+    $(document).ready(function(){
+        $.get("http://localhost:8089/portal/user/get_inforamtion.do",function(data,status){
+            var resultstatus = data.status;
+            var resuData = data.data;
+
+            if(resultstatus==0){
+                $("#signIn").css("display","none");
+                $("#signOut").css("display","block");
+                $("#userCenter").css("display","block");
+            };
+        });
+
+        $("#signOut").click(function () {
+            $.get("http://localhost:8089/portal/user/logout.do",function(data,status){
+                var resultstatus = data.status;
+                if(resultstatus==0){
+                    alert("注销成功")
+                    $("#signIn").css("display","block");
+                    $("#signOut").css("display","none");
+                    $("#userCenter").css("display","none");
+                }else {
+                    alert("服务器端异常，注销失败")
+				};
+                window.location.href = "main.html";
+            });
+        })
+    });
+</script>
+</html>

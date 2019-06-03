@@ -9,6 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/upload/**").addResourceLocations("file:E:/Tomcat/virtualCategory/");
+        registry.addResourceHandler("/upload/**").addResourceLocations("file:E:/tfkzResources/virtualCategory/");
     }
 }

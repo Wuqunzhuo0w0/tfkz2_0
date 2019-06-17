@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div>
+    <img style="height: 100px; width: auto" id="img1" src="http://localhost:8089/upload/Drink/啤酒/1664-2(啤酒).jpg"/>
+    <button id="button1">asdasdassdas</button>
+</div>
+</body>
+<script src="../js/jquery-1.11.1.min.js" ></script>
+<script>
+    $(document).ready(function(){
+        $("#img1").css("src","http://localhost:8089/upload/1.png");
+        $("#button1").click(function(){
+            $("#img1").attr("src","http://localhost:8089/upload/1.png");
+        });
+
+    });
+</script>
+</html>

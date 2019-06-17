@@ -122,28 +122,9 @@ nav a:focus {
 	  display: inline-block;
 	  float: right;
 	  cursor: pointer;
-	  margin: 14px 20px;
+	    margin: 14px 20px;
 	}
-.cssmenu ul{
-	float:right;
-	padding:0;
-	margin-left: 80%；
-}
-.cssmenu ul li {
-	display: inline;
-	list-style:none;
-}
-.cssmenu ul li a {
-	color:#fff;
-	display: block;
-	margin:10px;
-	font-size: 0.8125em;
-}
-.cssmenu li> a:hover {
-	color: #ACEAFA;
-	text-decoration:none;
-}
-.top-menu {
+	.top-menu {
 		float: none;
 		margin-top: 0em;
 	}
@@ -1294,18 +1275,6 @@ i.google{
 	  .callbacks_tabs {
   bottom: -12%;
   }
-}
-
-@media@media only screen and(max-width:1280px){
-	.login-banner{
-		width: 1280px;
-		min-height: 460px;
-		margin-top: 20px;
-	}
-	.banner-left{
-		width: 1024px;
-		min-height: 460px;
-	}
 }
 @media(max-width:800px){
 	.banner-slider {

@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="同福客栈，同福客栈酒水，东软睿道同福客栈">
+
+  <title>购物车</title>
+  <link href="../css/cart/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="../css/cart/grid.css"css/grid.css"" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="../js/cart/jquery-1.7.2.min.js" ></script>
+  <script src="../js/cart/html5.js" ></script>
+  <script src="../js/cart/jflow.plus.js" ></script>
+  <script src="../js/cart/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="../js/cart/checkbox.js"></script>
+  <script src="../js/cart/radio.js"></script>
+  <script src="../js/cart/selectBox.js"></script>
+  <script src="../js/cart/jquery.jqzoom-core.js" ></script>
+
+  <script>
+       $(document).ready(function(){
+	      $("#myController").jFlow({
+		     controller: ".control", // must be class, use . sign
+		     slideWrapper : "#jFlowSlider", // must be id, use # sign
+		     slides: "#slider",  // the div where all your sliding divs are nested in
+		     selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		     width: "984px",  // this is the width for the content-slider
+		     height: "480px",  // this is the height for the content-slider
+		     duration: 400,  // time in miliseconds to transition one slide
+		     prev: ".slidprev", // must be class, use . sign
+		     next: ".slidnext", // must be class, use . sign
+		     auto: true
+	      });
+       });
+  </script>
+  <script>
+       $(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+          $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+  <script>
+       $(document).ready(function() {
+	      $("select").selectBox();
+       });
+  </script>
+
+</head>
+<body>
+  <div class="container_12"> <!-- #top -->
+    <header id="branding">
+      <div class="grid_3">
+        <hgroup>
+          <h1 id="site_logo" ><a href="main.html"><img src="../images/logo.png" alt="Online Store Theme Logo"/></a></h1>
+        </hgroup>
+      </div><!-- .grid_3 -->
+      <div class="grid_3">
+        <form class="search">
+          <input type="text" name="search" class="entry_form" value="" placeholder="输入物品名称"/>
+	</form>
+      </div><!-- .grid_3 -->
+
+      <div class="grid_6">
+        <ul id="cart_nav">
+          <li>
+            <a class="cart_li" href="">购物车</a>
+            <ul class="cart_cont">
+              <li class="no_border"><p>最近添加的商品</p></li>
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="../images/科罗娜.jpg" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>科罗娜</h4>
+                  <div class="price">1 x ¥168.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+              
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="../images/莫吉托.jpg" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>莫吉托</h4>
+                  <div class="price">1 x ¥29.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+	      <li class="no_border">
+		<a href="shopping_cart.html" class="view_cart">查看购物车</a>
+		<a href="#" class="checkout">结账</a>
+	      </li>
+            </ul>
+          </li>
+        </ul>
+
+        <nav class="private">
+          <ul>
+            <li><a href="personal.html">个人中心</a></li>
+          </ul>
+        </nav><!-- .private -->
+      </div><!-- .grid_6 -->
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+
+  <section id="main" class="entire_width">
+    <div class="container_12">
+
+
+       <div  id="content_bottom">
+
+
+        <div style=" margin-left: 30%; margin-rightar: 30%; " class="grid_4">
+          <div class="bottom_block total">
+	      <div style="width: 300px; height: 300px">
+              <img style="margin-right: 10%;" id="QRCode" />
+          </div>
+	    <button id="pay"  onclick="goShipping()" class="checkout">结账</button>
+          </div><!-- .total -->
+        </div><!-- .grid_4 -->
+
+        <div class="clear"></div>
+      </div><!-- #content_bottom -->
+
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+	<footer>
+		<div class="copy">
+			<p>购买前请确认达到法定饮酒年龄！同福客栈不销售含酒精产品给18岁以下人士</br>Copyright &copy; 2019-同福客栈 版权所有</p>
+		</div>
+
+	</footer>
+</body>
+<script type="text/javascript" src="../js/template/jquery.tmpl.js"></script>
+<script id="each"  type="text/x-jquery-tmpl">
+
+    {{each(i,sublist) cartProductVoList}}
+ 		  <tr>
+		     <td class="images"><a href="product_page.html"><img src="http://localhost:8089/upload{{= sublist.productMainImage}}" alt="Product 6"></a></td>
+		     <td class="bg name">{{= sublist.productName}}</td>
+		     <td class="edit"><a title="Edit" href="#">编辑</a></td>
+		     <td class="bg price">{{= sublist.productPrice}}</td>
+		     <td class="qty"><input type="text" name="" value="{{= sublist.quantity}}" placeholder="1" /></td>
+		     <td class="bg subtotal">{{= sublist.productTotalPrice}}</td>
+		     <td class="close"><a title="close" class="close" onclick="remove({{= sublist.productId}})" ></a></td>
+	      </tr>
+     {{/each}}
+
+
+
+</script>
+<script type="text/javascript">
+    async function ggg(no){
+        while(true){
+            let res = await $.post("http://localhost:8089/portal/order/query_order_pay_status.do",{orderNo:no});
+            console.log(res ,1);
+            if(res.data!=true){
+                console.log(res,2);
+                await new Promise((res)=>setTimeout(res,3000));
+            }else{
+                window.location.href = "PaySuccess.html";
+                return res;
+            }
+        }
+
+    };
+
+	$(document).ready(function () {
+       var qrCode = sessionStorage.getItem("qrCode");
+       var orderNo = sessionStorage.getItem("orderNo");
+        $("#QRCode").attr("src","http://localhost:8089/upload/"+qrCode);
+        ggg(orderNo).then((res)=>{
+            console.log(res,3);
+        })
+    })
+</script>
+</html>

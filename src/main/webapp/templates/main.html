@@ -13,6 +13,7 @@
 <link href="../css/style.css" rel='stylesheet' type='text/css' />
 <link href="../css/gallery.css" rel='stylesheet' type='text/css' />
 <script src="../js/jquery-1.11.1.min.js"></script>
+
 <link href='#css?family=Source+Sans+Pro:400,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -27,7 +28,7 @@
 					<li style="float: left;margin-top:8px;margin-left:20px;display: none;" id="signOut"><a href="login.html">点击注销</a></li>
 				</ul>
 				<ul style=" font:15px verdana, arial, sans-serif; float: left; margin-left: 50px ; display:inline-block;list-style: none; size: 50px;margin-top: 15px" >
-					<li style="float: left;margin-top:8px;display: none" id="userCenter"><a href="#">用户中心</a></li>
+					<li style="float: left;margin-top:8px;display: none" id="userCenter"><a href="personal.html">用户中心</a></li>
 				</ul>
 				</div>
 				<span class="menu"> </span>
@@ -37,8 +38,8 @@
 						<li><a class="active scroll" href="#home" data-hover="Home">首页</a></li>
 						<li><a class="scroll" href="#service" data-hover="Services">酒类</a></li>
 						<li><a class="scroll" href="#products" data-hover="Products">水类</a></li>
-						<li><a class="scroll" href="#gallery" data-hover="Gallery">热销榜单</a</li>
-						<li><a class="scroll" data-hover="Gallery">购物车</a></li>
+						<li><a class="scroll" href="#gallery" data-hover="Gallery">热销榜单</a></li>
+						<li id="myCart"><a class="scroll" href="shopping_cart.html" data-hover="Gallery" >购物车</a></li>
 						<li><a class="scroll" href="#team" data-hover="Team">关于我们</a></li>	
 						<div class="clearfix"></div>
 					</ul>
@@ -58,7 +59,7 @@
 		<!--banner-->
 			<span class="right">
 			<input type="text" name="as_q" class="box" id="searched_content" title="在此输入搜索内容。"/>
-			<input type="submit" value="搜索" class="button1" title="搜索！" />
+			<input  id="searchBtn" type="submit" value="搜索" class="button1" title="搜索！" />
 			</span>
 	<div class="container">		
 		<div class="inner-slider">
@@ -420,8 +421,18 @@
 		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 </body>
+<script src="../js/jquery-session.js" type="text/javascript"></script>
 <script>
     $(document).ready(function(){
+        $("#searchBtn").click(function () {
+            sessionStorage.setItem("searchKey",$("#searched_content").val());
+           // alert($("#searched_content").val());
+            window.location.href = "shopping-list.html";
+        });
+        $("#myCart").click(function () {
+
+            window.location.href = "shopping_cart.html";
+        });
         $.get("http://localhost:8089/portal/user/get_inforamtion.do",function(data,status){
             var resultstatus = data.status;
             var resuData = data.data;

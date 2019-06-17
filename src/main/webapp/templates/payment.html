@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="同福客栈，同福客栈酒水，东软睿道同福客栈">
+
+  <title>商品列表</title>
+  <link href="../css/cart/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="../css/cart/grid.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="../js/cart/jquery-1.7.2.min.js" ></script>
+  <script src="../js/cart/html5.js" ></script>
+  <script src="../js/cart/jflow.plus.js" ></script>
+  <script src="../js/cart/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <style>
+    .shipping{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    span strong{
+      font-size: 15px;
+    }
+  </style>
+  <script>
+	$(document).ready(function(){
+	    $("#myController").jFlow({
+			controller: ".control", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#slider",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "984px",  // this is the width for the content-slider
+			height: "480px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".slidprev", // must be class, use . sign
+			next: ".slidnext", // must be class, use . sign
+			auto: true
+    });
+  });
+  </script>
+  <script>
+	$(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+          $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+
+</head>
+<body>
+<!-- .container_12 -->
+  <div class="container_12"> <!-- #top -->
+    <header id="branding">
+      <div class="grid_3">
+        <hgroup>
+          <h1 id="site_logo" ><a href="main.html"><img src="../images/logo.png" alt="Online Store Theme Logo"/></a></h1>
+        </hgroup>
+      </div><!-- .grid_3 -->
+      <div class="grid_3">
+        <form class="search">
+          <input type="text" name="search" class="entry_form" value="" placeholder="输入物品名称"/>
+	</form>
+      </div><!-- .grid_3 -->
+
+      <div class="grid_6">
+        <ul id="cart_nav">
+          <li>
+            <a class="cart_li" href="">购物车</a>
+            <ul class="cart_cont">
+              <li class="no_border"><p>最近添加的商品</p></li>
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="../images/科罗娜.jpg" alt="科罗娜" /></div></a>
+                <div class="cont_cart">
+                  <h4>科罗娜</h4>
+                  <div class="price">1 x ¥168.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+              
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="../images/莫吉托.jpg" alt="莫吉托"/></div></a>
+                <div class="cont_cart">
+                  <h4>莫吉托</h4>
+                  <div class="price">1 x ¥29.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+	      <li class="no_border">
+		<a href="shopping_cart.html" class="view_cart">查看购物车</a>
+		<a href="#" class="checkout">结账</a>
+	      </li>
+            </ul>
+          </li>
+        </ul>
+
+        <nav class="private">
+          <ul>
+            <li><a href="#">个人中心</a></li>
+          </ul>
+        </nav><!-- .private -->
+      </div><!-- .grid_6 -->
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+<div class="container_12"> <!-- #top -->
+  <span> <h3>请选择收货地址：</h3></span>
+<div id="content_bottom">
+
+
+
+  <div class="clear"></div>
+</div><!-- #content_bottom -->
+  <div style="float: right ;width: 100%" class="grid_4">
+    <div class="bottom_block total">
+      <table class="subtotal">
+        <tr>
+          <td>商品总价</td><td class="price totalprice">¥748</td>
+        </tr>
+        <tr class="grand_total">
+          <td>总计</td><td class="price totalprice" >¥748</td>
+        </tr>
+      </table>
+      <button id="goPay" class="checkout">结账</button>
+    </div><!-- .total -->
+  </div><!-- .grid_4 -->
+</div><!-- .container_12 -->
+
+
+<footer>
+		<div style="bottom: 0;" class="copy">
+			<p>购买前请确认达到法定饮酒年龄！同福客栈不销售含酒精产品给18岁以下人士</br>Copyright &copy; 2019-同福客栈 版权所有</p>
+		</div>
+	</footer>
+
+<div  style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+<script type="text/javascript" src="../js/template/jquery.tmpl.js"></script>
+<script id="each"  type="text/x-jquery-tmpl">
+  {{each(i,sublist) list}}
+  <div class="grid_4">
+  <strong>地址{{= i+1}}</strong>
+  <div style="  margin-bottom:20px; -moz-box-shadow:2px 2px 5px #333333; -webkit-box-shadow:2px 2px 5px #333333; box-shadow:2px 2px 5px #333333;" class="bottom_block estimate ">
+      <div class="shipping">
+        <span>
+          <span><strong>收件人：</strong></span>
+          <span>{{= sublist.receiverName}}</span>
+        </span>
+      </div>
+      <div class="shipping">
+        <span>
+          <span><strong>联系方式：</strong></span>
+          <span>{{= sublist.receiverMobile}}</span>
+        </span>
+      </div>
+      <div class="shipping">
+        <span>
+          <span><strong>详细地址：</strong></span>
+          <span>{{= sublist.receiverProvince}}{{= sublist.receiverCity}}{{= sublist.receiverAddress}}</span>
+        </span>
+      </div>
+      <div style="margin-top: 20% ; margin-left: 40%" class="new-addr-btn">
+        <a onclick="setShippingID({{= sublist.id}})" >选择</a>
+        <span class="new-addr-bar">|</span>
+        <a href="#">编辑</a>
+        <span class="new-addr-bar">|</span>
+        <a href="javascript:void(0);"  onclick="delClick(this);">删除</a>
+      </div>
+    </div><!-- .estimate -->
+    </div>
+    {{/each}}
+</script>
+<script type="text/javascript">
+    var shippingId="";
+
+    $("#goPay").click(function () {
+        if(shippingId==""){
+            return false;
+        }
+        $.post("http://localhost:8089/portal/order/create.do",
+            {
+                shippingId:shippingId,
+
+            },
+            function(data,status){
+                var resultstatus = data.status;   //没有声明的需要声明这些变量，我之前声明过var ***
+                var orderData = data.data;
+                if(resultstatus==0){
+                    alert("创建订单成功");
+                    $.post("http://localhost:8089/portal/order/pay.do",
+                        {
+                            orderNo:orderData.orderNo,
+
+                        },
+                        function(data,status){
+                            var resultstatus = data.status;   //没有声明的需要声明这些变量，我之前声明过var ***
+                            var QRCode = data.data;
+                            if(resultstatus==0){
+                                alert("二维码生成成功");
+                                sessionStorage.setItem("qrCode",QRCode.qrCode);
+                                sessionStorage.setItem("orderNo",orderData.orderNo);
+                                window.location.href = "QRCode.html";
+                            };
+                        });
+                    alert(data.orderNo);
+
+                };
+            });
+    });
+    function setShippingID(id){
+        shippingId = id;
+        alert(shippingId);
+    }
+    $(document).ready(function () {
+        var totalPrice = sessionStorage.getItem("totalPrice");
+        $(".totalprice").html(""+totalPrice);
+        $.get("http://localhost:8089/portal/shipping/list.do",function(data,status){
+            var resultstatus = data.status;
+            var resuData = data.data;
+
+            if(resultstatus==0){
+                $("#each").tmpl(resuData).appendTo('#content_bottom');
+            };
+
+        });
+    });
+
+</script>
+</html>

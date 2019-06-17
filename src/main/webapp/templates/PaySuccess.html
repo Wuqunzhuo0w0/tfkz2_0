@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="同福客栈">
+
+  <title>支付结果</title>
+  <link href="../css/cart/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="../css/cart/grid.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="../js/cart/jquery-1.7.2.min.js" ></script>
+  <script src="../js/cart/html5.js" ></script>
+  <script src="../js/cart/jflow.plus.js" ></script>
+  <script src="../js/cart/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="../js/cart/checkbox.js"></script>
+  <script src="../js/cart/radio.js"></script>
+  <script src="../js/cart/selectBox.js"></script>
+
+  <script>
+	$(document).ready(function(){
+	      $("#myController").jFlow({
+			controller: ".control", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#slider",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "984px",  // this is the width for the content-slider
+			height: "480px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".slidprev", // must be class, use . sign
+			next: ".slidnext", // must be class, use . sign
+			auto: true
+	      });
+       });
+  </script>
+  <script>
+	$(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+          $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+  <script>
+       $(document).ready(function() {
+	$("select").selectBox();
+       });
+  </script>
+
+</head>
+<body>
+  <div class="container_12"> <!-- #top -->
+    <header id="branding">
+      <div class="grid_3">
+        <hgroup>
+          <h1 id="site_logo" ><a href="main.html"><img src="../images/logo.png" alt="Online Store Theme Logo"/></a></h1>
+        </hgroup>
+      </div><!-- .grid_3 -->
+      <div class="grid_3">
+        <form class="search">
+          <input type="text" name="search" class="entry_form" value="" placeholder="输入物品名称"/>
+	</form>
+      </div><!-- .grid_3 -->
+
+      <div class="grid_6">
+        <ul id="cart_nav">
+          <li>
+            <a class="cart_li" href="">购物车</a>
+            <ul class="cart_cont">
+              <li class="no_border"><p>最近添加的商品</p></li>
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="../images/科罗娜.jpg" alt="科罗娜" /></div></a>
+                <div class="cont_cart">
+                  <h4>科罗娜</h4>
+                  <div class="price">1 x ¥168.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+              
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="../images/莫吉托.jpg" alt="莫吉托"/></div></a>
+                <div class="cont_cart">
+                  <h4>莫吉托</h4>
+                  <div class="price">1 x ¥29.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+	      <li class="no_border">
+		<a href="shopping_cart.html" class="view_cart">查看购物车</a>
+		<a href="#" class="checkout">结账</a>
+	      </li>
+            </ul>
+          </li>
+        </ul>
+
+        <nav class="private">
+          <ul>
+            <li><a href="#">个人中心</a></li>
+          </ul>
+        </nav><!-- .private -->
+      </div><!-- .grid_6 -->
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+  <section id="main" class="entire_width">
+    <div class="container_12">
+       <div class="grid_12">
+       <h1 class="page_title">支付结果</h1>
+
+       <table class="compare">
+	      <tr class="description">
+		     <td class="bg"></td>
+			  <td class="bg"><img src="../images/支付成功.png" class="zhifulogo"</td>
+			  <td class="bg"><h2 class="zhifu">支付成功</br></h2></td>
+		     <td class="bg"></td>
+	      </tr>
+	      <tr class="add_cart">
+		     <td class="bg"></td>
+		     <td class="bg"></td>
+		     <td class="bg"></td>
+		     <td class="bg"><button id="returnMain" class="add">继续购物</button></td>
+	      </tr>
+		   <div class="clear"></div>
+       </table>
+       </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+
+  <div class="clear"></div>
+	<footer>
+		<div class="copy">
+			<p>购买前请确认达到法定饮酒年龄！同福客栈不销售含酒精产品给18岁以下人士</br>Copyright &copy; 2019-同福客栈 版权所有</p>
+		</div>
+	</footer>
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#returnMain").click(function () {
+            window.location.href = "main.html";
+        })
+    })
+</script>
+</html>

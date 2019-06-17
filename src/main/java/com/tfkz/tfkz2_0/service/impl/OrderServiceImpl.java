@@ -430,6 +430,8 @@ public class OrderServiceImpl implements IOrderService {
                 // 将二维码信息串生成图片，并保存，（需要修改为运行机器上的路径）
                 String filePath = String.format(Configs.getSavecode_test()+"qr-%s.png",
                         response.getOutTradeNo());
+                String newFilePath = String.format("QRCode/"+"qr-%s.png",
+                        response.getOutTradeNo());
                 ZxingUtils.getQRCodeImge(response.getQrCode(), 256, filePath);
                 System.out.println(filePath+"------------------------------filePath=");
 
@@ -442,11 +444,12 @@ public class OrderServiceImpl implements IOrderService {
 
 
                 //预下单成功返回信息
+
                 Map map = new HashMap();
                 map.put("orderNo", order.getOrderNo());
                 //返回图片地址为七牛云地址
                // map.put("qrCode", (qiniu+keys));
-                map.put("qrCode", filePath);
+                map.put("qrCode", newFilePath);
                 sr = ServerResponse.createServerResponseBySuccess(map);
                 return sr;
             } else {

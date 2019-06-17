@@ -3,13 +3,16 @@ package com.tfkz.tfkz2_0.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
+import com.tfkz.tfkz2_0.common.Const;
 import com.tfkz.tfkz2_0.common.ServerResponse;
 import com.tfkz.tfkz2_0.mapper.ShippingMapper;
 import com.tfkz.tfkz2_0.pojo.Shipping;
+import com.tfkz.tfkz2_0.pojo.UserInfo;
 import com.tfkz.tfkz2_0.service.IShippingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -69,11 +72,18 @@ public class ShippingServiceImpl implements IShippingService {
     }
 
     @Override
-    public ServerResponse list(Integer pageNum, Integer pageSize){
-        PageHelper.startPage(pageNum,pageSize);
-        List<Shipping> shippingList = shippingMapper.selectAll();
-        PageInfo pageInfo = new PageInfo(shippingList);
-        return ServerResponse.createServerResponseBySuccess(pageInfo);
+    public ServerResponse list(HttpSession session,Integer pageNum, Integer pageSize){
+        UserInfo ui = (UserInfo) session.getAttribute(Const.RoleEnum.ROLE_CUSTOMER.getDesc());
+        if(ui == null){
+            ServerResponse sr = ServerResponse.createServerResponseByError(Const.ReponseCodeEnum.FORCE_EXIT.getCode(),Const.ReponseCodeEnum.FORCE_EXIT.getDesc());
+            return sr;
+        }else{
+            PageHelper.startPage(pageNum,pageSize);
+            List<Shipping> shippingList = shippingMapper.selectAll(ui.getId());
+            PageInfo pageInfo = new PageInfo(shippingList);
+            return ServerResponse.createServerResponseBySuccess(pageInfo);
+        }
+
     }
 
 }

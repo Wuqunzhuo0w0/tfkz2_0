@@ -3,12 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="d5840936-9a3d-4db0-9347-0528b7e6e23e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ShippingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ShippingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/mapper/ShippingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/mapper/ShippingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/IShippingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/IShippingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/ShippingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/ShippingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/utils/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/utils/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/ShippingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/ShippingMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/zfbinfo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/zfbinfo.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/controller/ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/controller/ViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/controller/ShippingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/controller/ShippingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/mapper/ShippingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/mapper/ShippingMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/mapper/ShippingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/mapper/ShippingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/service/IShippingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/service/IShippingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/service/impl/ShippingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/service/impl/ShippingServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/utils/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tfkz/tfkz2_0/utils/WebMvcConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/zfbinfo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zfbinfo.properties" afterDir="false" />
     </list>
@@ -20,74 +31,95 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1538171845">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.32" value="2" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="7" />
-          <entry key="css" value="5" />
+          <entry key="class" value="8" />
+          <entry key="css" value="14" />
           <entry key="ftl" value="1" />
-          <entry key="html" value="5" />
-          <entry key="java" value="197" />
+          <entry key="html" value="36" />
+          <entry key="java" value="229" />
           <entry key="jpg" value="2" />
-          <entry key="js" value="12" />
-          <entry key="jsp" value="11" />
+          <entry key="js" value="24" />
+          <entry key="jsp" value="12" />
           <entry key="png" value="3" />
-          <entry key="properties" value="17" />
+          <entry key="properties" value="21" />
           <entry key="ts" value="2" />
-          <entry key="xml" value="45" />
+          <entry key="xml" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="7" />
-          <entry key="CSS" value="5" />
+          <entry key="CLASS" value="8" />
+          <entry key="CSS" value="14" />
           <entry key="FTL" value="1" />
-          <entry key="HTML" value="5" />
+          <entry key="HTML" value="36" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="197" />
-          <entry key="JSP" value="11" />
-          <entry key="JavaScript" value="12" />
-          <entry key="Properties" value="17" />
+          <entry key="JAVA" value="229" />
+          <entry key="JSP" value="12" />
+          <entry key="JavaScript" value="24" />
+          <entry key="Properties" value="21" />
           <entry key="TypeScript" value="2" />
-          <entry key="XML" value="45" />
+          <entry key="XML" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="17" />
           <entry key="ftl" value="21" />
-          <entry key="html" value="1034" />
-          <entry key="java" value="1484" />
+          <entry key="html" value="5713" />
+          <entry key="java" value="1599" />
           <entry key="js" value="2" />
           <entry key="jsp" value="499" />
-          <entry key="properties" value="74" />
-          <entry key="xml" value="269" />
+          <entry key="properties" value="76" />
+          <entry key="xml" value="288" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="CSS" value="17" />
           <entry key="FTL" value="21" />
-          <entry key="HTML" value="1034" />
-          <entry key="JAVA" value="1484" />
+          <entry key="HTML" value="5713" />
+          <entry key="JAVA" value="1599" />
           <entry key="JSP" value="499" />
           <entry key="JavaScript" value="2" />
-          <entry key="Properties" value="74" />
-          <entry key="SQL" value="2" />
-          <entry key="XML" value="267" />
+          <entry key="Properties" value="76" />
+          <entry key="SQL" value="3" />
+          <entry key="XML" value="285" />
         </counts>
       </usages-collector>
     </session>
@@ -95,57 +127,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/main.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/shopping_cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2191">
-              <caret line="264" column="38" lean-forward="true" selection-start-line="264" selection-start-column="38" selection-end-line="264" selection-end-column="38" />
+            <state relative-caret-position="-27">
+              <caret line="262" column="5" selection-start-line="262" selection-start-column="5" selection-end-line="262" selection-end-column="5" />
               <folding>
-                <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="222" column="13" lean-forward="true" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="178" column="53" selection-start-line="178" selection-start-column="53" selection-end-line="178" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="39" lean-forward="true" selection-start-column="10" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/utils/WebMvcConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/OrderController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/QRCode.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="176" column="57" lean-forward="true" selection-start-line="176" selection-start-column="15" selection-end-line="176" selection-end-column="57" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,8 +176,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="448">
+              <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/OrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="501" column="36" lean-forward="true" selection-start-line="501" selection-start-column="36" selection-end-line="501" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/PaySuccess.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="156" column="40" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/zfbinfo.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -168,6 +239,7 @@
         <option value="Python Script" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -175,6 +247,16 @@
     <findStrings>
       <find>jquer</find>
       <find>login.ht</find>
+      <find>question</find>
+      <find>search</find>
+      <find>appendTo</find>
+      <find>each</find>
+      <find>commodity</find>
+      <find>uid</find>
+      <find>username</find>
+      <find>price</find>
+      <find>checkout</find>
+      <find>map</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,24 +265,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/index.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/index.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/Tfkz20Application.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/templates/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/IShippingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/mapper/ShippingMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/ShippingMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ShippingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/ShippingServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/pojo/vo/OrderItemVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/pojo/vo/OrderVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/pojo/vo/ShippingVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/pojo/vo/CartOrderItemVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/mapper/OrderItemMapper.java" />
@@ -213,16 +277,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/pojo/pay/ZxingUtils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/utils/QiuNiuUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/utils/OpinionUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/mapper/CartMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/CartMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/OrderItemMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/PayInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/utils/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/index2.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/index3.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/index3.html" />
@@ -231,9 +292,30 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ViewController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/main.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/zfbinfo.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/templates/main.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/ceshi.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/mima.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/ceshi2.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/cart/grid.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/personal.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/shopping-list.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/product_page.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/main.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/shopping_cart.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/cart/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/IShippingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ShippingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/mapper/ShippingMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/ShippingMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/ShippingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/utils/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/payment.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/zfbinfo.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/QRCode.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/PaySuccess.html" />
       </list>
     </option>
   </component>
@@ -265,9 +347,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="655" />
+    <option name="y" value="157" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
@@ -276,7 +358,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,7 +398,82 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tfkz2_0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tfkz2_0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="Interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tfkz2_0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tfkz2_0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tfkz2_0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="pay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tfkz2_0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tfkz2_0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tfkz2_0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tfkz2_0" type="b2602c69:ProjectViewProjectNode" />
@@ -348,32 +504,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tfkz2_0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tfkz2_0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559570419622" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560698160384" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -382,11 +532,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp" />
       <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\templates" />
+      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\css" />
+      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\images" />
+      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp" />
       <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\WEB-INF\jsp" />
-      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\resources\static\js" />
-      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\resources\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tfkz.tfkz2_0.utils" />
@@ -396,11 +546,11 @@
       <recent name="com.tfkz.tfkz2_0.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\js" />
       <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\templates" />
-      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp" />
-      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\fonts" />
+      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\css\cart" />
       <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\css" />
+      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\js" />
+      <recent name="E:\IntelliJ IDEA\workspaces\tfkz2_0\src\main\webapp\js\template" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -446,16 +596,23 @@
       <workItem from="1559523171826" duration="1030000" />
       <workItem from="1559541179531" duration="13003000" />
       <workItem from="1559558870296" duration="9383000" />
+      <workItem from="1559573497198" duration="337000" />
+      <workItem from="1559660245323" duration="677000" />
+      <workItem from="1560239653281" duration="3180000" />
+      <workItem from="1560600300158" duration="6072000" />
+      <workItem from="1560644325604" duration="40645000" />
+      <workItem from="1560752212719" duration="2116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98802000" />
+    <option name="totallyTimeSpent" value="151829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22386059" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24262735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -465,7 +622,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27659574" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30070922" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -478,11 +635,11 @@
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32765958" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="1" weight="0.3297587" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.3297587" />
       <window_info anchor="right" id="Bean Validation" order="7" weight="0.3297587" />
       <window_info anchor="right" id="SciView" order="8" />
@@ -496,230 +653,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/OrderItemMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="90" column="11" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/qiniu/qiniu-java-sdk/7.2.18/qiniu-java-sdk-7.2.18.jar!/com/qiniu/storage/model/DefaultPutRet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/pojo/pay/ZxingUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/pojo/vo/OrderVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Formatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="2492" column="49" selection-start-line="2492" selection-start-column="49" selection-end-line="2492" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="2939" column="34" selection-start-line="2939" selection-start-column="34" selection-end-line="2939" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nullqr-1559131145838.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nullqr-1559140956871.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nullqr-1559132957814.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/utils/QiuNiuUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/OrderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="102" column="25" lean-forward="true" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sdk/alipay-sdk-java/3.4.49.ALL/alipay-sdk-java-3.4.49.ALL.jar!/com/alipay/api/internal/util/AlipaySignature.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="198" column="26" selection-start-line="198" selection-start-column="26" selection-end-line="198" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9842">
-          <caret line="548" selection-start-line="548" selection-end-line="548" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/pojo/pay/Configs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2109">
-          <caret line="128" column="36" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sdk/alipay-sdk-java/3.4.49.ALL/alipay-sdk-java-3.4.49.ALL.jar!/com/alipay/api/request/AlipayTradePrecreateRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/utils/UrlSetUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/PayInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/ShippingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="73" column="58" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/IOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/gallery.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-1.11.1.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/s4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="1298" column="6" selection-start-line="1298" selection-start-column="6" selection-end-line="1298" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index2.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/npm.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.countTo.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/zfbinfo.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/common/ServerResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="38" column="89" selection-start-line="38" selection-start-column="89" selection-end-line="38" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/common/Const.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -741,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -761,56 +692,324 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.backstretch.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/cart/html5.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mima/demo.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mima/jquery.validate.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mima/jquery.bootstrap.wizard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" lean-forward="true" selection-start-column="10" selection-end-column="39" />
+        <state relative-caret-position="-4560">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/OrderController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mima/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mima/paper-bootstrap-wizard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+        <state relative-caret-position="-798" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/mima.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4541">
+          <caret line="239" column="57" selection-start-line="239" selection-start-column="57" selection-end-line="239" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-session.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/template/jquery.tmpl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/cart/grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2276">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/cart/jquery.jqzoom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1744" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/personal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="129" column="45" selection-start-line="129" selection-start-column="45" selection-end-line="129" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/product_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1423">
+          <caret line="197" column="43" selection-start-line="197" selection-start-column="43" selection-end-line="197" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/shopping-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="224" column="24" selection-start-line="224" selection-start-column="24" selection-end-line="224" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24662">
+          <caret line="1298" column="6" selection-start-line="1298" selection-start-column="6" selection-end-line="1298" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/cart/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="457" column="14" selection-start-line="457" selection-start-column="14" selection-end-line="457" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/ICartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/CartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="312" column="33" selection-start-line="312" selection-start-column="33" selection-end-line="312" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1215">
+          <caret line="150" column="30" lean-forward="true" selection-start-line="150" selection-start-column="30" selection-end-line="150" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/IShippingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/ShippingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="81" column="77" selection-start-line="81" selection-start-column="77" selection-end-line="81" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/mapper/ShippingMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tfkz/tfkz2_0/mapper/ShippingMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/mapper/CartMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/ceshi2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alipay/sdk/alipay-sdk-java/3.4.49.ALL/alipay-sdk-java-3.4.49.ALL.jar!/com/alipay/api/response/AlipayTradePrecreateResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4028">
+          <caret line="216" column="69" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/utils/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="152">
+          <caret line="11" column="99" selection-start-line="11" selection-start-column="99" selection-end-line="11" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/IOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="551">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/main.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/ceshi.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2191">
-          <caret line="264" column="38" lean-forward="true" selection-start-line="264" selection-start-column="38" selection-end-line="264" selection-end-column="38" />
+        <state relative-caret-position="342">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="72" />
           <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ShippingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="222" column="13" lean-forward="true" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="13" />
+        <state relative-caret-position="270">
+          <caret line="178" column="53" selection-start-line="178" selection-start-column="53" selection-end-line="178" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="501" column="36" lean-forward="true" selection-start-line="501" selection-start-column="36" selection-end-line="501" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tfkz/tfkz2_0/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/shopping_cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="262" column="5" selection-start-line="262" selection-start-column="5" selection-end-line="262" selection-end-column="5" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/zfbinfo.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/QRCode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="176" column="57" lean-forward="true" selection-start-line="176" selection-start-column="15" selection-end-line="176" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/PaySuccess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="156" column="40" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="同福客栈，同福客栈酒水，东软睿道同福客栈">
+
+  <title>商品详情页</title>
+  <link href="../css/cart/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="../css/cart/grid.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="../css/cart/jquery.jqzoom.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="../js/cart/jquery-1.7.2.min.js" ></script>
+  <script src="../js/cart/html5.js" ></script>
+  <script src="../js/cart/jflow.plus.js" ></script>
+  <script src="../js/cart/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="../js/cart/checkbox.js"></script>
+  <script src="../js/cart/radio.js"></script>
+  <script src="../js/cart/selectBox.js"></script>
+  <script src="../js/cart/jquery.jqzoom-core.js" ></script>
+
+  <script>
+	$(document).ready(function() {
+		$('.jqzoom').jqzoom({
+			zoomType: 'standard',
+			lens:true,
+			preloadImages: true,
+			alwaysOn:false
+		});
+	});
+  </script>
+
+  <script>
+	$(document).ready(function() {
+		$("select").selectBox();
+	});
+  </script>
+
+  <script>
+	$(document).ready(function() {
+		$('#wrapper_tab a').click(function() {
+			if ($(this).attr('class') != $('#wrapper_tab').attr('class') ) {
+				$('#wrapper_tab').attr('class',$(this).attr('class'));
+			}
+			return false;
+		});
+	});
+  </script>
+
+  <script>
+	$(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+          $('#list_banners').carouFredSel({
+		prev: '#ban_prev',
+		next: '#ban_next',
+		scroll: 1,
+		auto: false
+	  });
+	  $('#thumblist').carouFredSel({
+		prev: '#img_prev',
+		next: '#img_next',
+		scroll: 1,
+		auto: false,
+		circular: false,
+	  });
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+
+</head>
+<body>
+  <div class="container_12"> <!-- #top -->
+    <header id="branding">
+      <div class="grid_3">
+        <hgroup>
+          <h1 id="site_logo" ><a href="main.html"><img src="../images/logo.png" alt="Online Store Theme Logo"/></a></h1>
+        </hgroup>
+      </div><!-- .grid_3 -->
+      <div class="grid_3">
+        <form class="search">
+          <input type="text" name="search" class="entry_form" value="" placeholder="输入物品名称"/>
+	</form>
+      </div><!-- .grid_3 -->
+
+      <div class="grid_6">
+        <ul id="cart_nav">
+          <li>
+            <a class="cart_li" href="">购物车</a>
+            <ul class="cart_cont">
+              <li class="no_border"><p>最近添加的商品</p></li>
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="../images/科罗娜.jpg" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>科罗娜</h4>
+                  <div class="price">1 x ¥168.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+              
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="../images/莫吉托.jpg" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>莫吉托</h4>
+                  <div class="price">1 x ¥29.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+	      <li class="no_border">
+		<a href="shopping_cart.html" class="view_cart">查看购物车</a>
+		<a href="#" class="checkout">结账</a>
+	      </li>
+            </ul>
+          </li>
+        </ul>
+
+        <nav class="private">
+          <ul>
+            <li><a href="#">个人中心</a></li>
+          </ul>
+        </nav><!-- .private -->
+      </div><!-- .grid_6 -->
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+	
+  <section  id="main">
+    <div class="container_12">
+
+       <div id="content" class="grid_9">
+	      <h1 class="page_title">商品详情</h1>
+
+		<div class="product_page">
+			<div class="grid_4 img_slid" id="products">
+				<img class="sale" src="../images/new.png" alt="Sale"/>
+				<div class="preview slides_container">
+					<div class="prev_bg">
+						<a href="#" class="jqzoom" rel='gal1' title="">
+							<img src="../images/莫吉托.jpg"/>
+						</a>
+					</div>
+				</div><!-- .prev -->
+
+				<ul class="pagination clearfix" id="thumblist">
+					<li><a class="zoomThumbActive" href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/produkt_slid.png',largeimage: './images/produkt_slid.png'}"><img src="../images/莫吉托1.jpg"></a></li>
+					<li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/produkt_slid1.png',largeimage: './images/produkt_slid1.png'}"><img src="../images/莫吉托2.jpg"></a></li>
+					<li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/produkt_slid2.png',largeimage: './images/produkt_slid2.png'}"><img src="../images/莫吉托3.jpg"></a></li>
+					<li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/produkt_slid3.png',largeimage: './images/produkt_slid3.png'}"><img src="../images/莫吉托4.jpg"></a></li>
+					<li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/produkt_slid4.png',largeimage: './images/produkt_slid4.png'}"><img src="../images/莫吉托.jpg"></a></li>
+				</ul>
+
+				<div class="next_prev">
+					<a id="img_prev" class="arows" href="#"><span>上一个</span></a>
+					<a id="img_next" class="arows" href="#"><span>下一个</span></a>
+				</div><!-- . -->
+			</div><!-- .grid_4 -->
+
+			<div class="grid_5">
+				<div class="entry_content">
+					<div class="review">
+						<h2>莫吉托</h2>
+					</div>
+					<p>莫吉托（Mojito）是一种由五种材料制成的鸡尾酒，为最有名的朗姆调酒之一，起源于古巴。莫吉托天调配原料有淡朗姆酒、糖、莱姆汁、苏打水和薄荷，最原始的古巴配方是使用留兰香或古巴岛上常见的柠檬薄荷。莫吉托有着相对低的酒精含量，莱姆与薄荷的清爽口味与朗姆酒的烈性相互补，使得透明无色的莫吉托调酒成为夏日的热门饮料之一。</p>
+					<div class="ava_price">
+						<div class="availability_sku">
+							<div class="availability">
+
+							</div>
+							<div class="sku">
+								产地：<span>意大利</span>
+							</div>
+						</div><!-- .availability_sku -->
+
+						<div class="price">
+							<div class="price_new">¥29</div>
+							<div class="price_old">¥129</div>
+						</div><!-- .price -->
+					</div><!-- .ava_price -->
+
+					<div class="block_cart">
+						<div class="obn_like">
+							<div class="like"><a href="#" class="like">添加到收藏</a></div>
+						</div>
+
+						<div class="cart">
+							<a href="#" class="bay">添加到购物车</a>
+							<input type="text" name="" class="number" value="1" />
+							<span>数量:</span>
+						</div>
+						<div class="clear"></div>
+					</div><!-- .block_cart -->
+					<div class="soc">
+						<img src="../images/soc.png" alt="Soc"/>
+					</div><!-- .soc -->
+				</div><!-- .entry_content -->
+
+			</div><!-- .grid_5 -->
+
+			<div class="clear"></div>
+
+			<div class="grid_9" >
+				<div id="wrapper_tab" class="tab1">
+					<a href="#" class="tab1 tab_link">描述</a>
+					<a href="#" class="tab2 tab_link">评论</a>
+
+					<div class="clear"></div>
+
+					<div class="tab1 tab_body">
+						<p>莫吉托（Mojito）是一种由五种材料制成的鸡尾酒，为最有名的朗姆调酒之一，起源于古巴。莫吉托天调配原料有淡朗姆酒、糖、莱姆汁、苏打水和薄荷，最原始的古巴配方是使用留兰香或古巴岛上常见的柠檬薄荷。莫吉托有着相对低的酒精含量，莱姆与薄荷的清爽口味与朗姆酒的烈性相互补，使得透明无色的莫吉托调酒成为夏日的热门饮料之一。</p>
+						<ul>
+							<li>把青柠汁、薄荷叶和糖浆放进杯中</li>
+							<li>用研杵把薄荷叶稍微压挤一下</li>
+							<li>加入朗姆酒，然后放入冰块至八分满</li>
+							<li>加一点苏打水进去，用搅拌长匙稍微搅一下</li>
+							<li>放进薄荷枝当装饰，再插入吸管即可</li>
+						</ul>
+
+						<p>也可以稍微变化：如果用甘蔗酒（Cachaca）来代替白色兰姆酒。</br></br>注意：小青柠是形状较小、颜色较绿的一种柠檬的近亲，由于汁液丰富，所以是酒保很喜欢的调酒材料。在蔬果店里通常可以找到，但有时亦被误标为柠檬。</p>
+
+					<div class="clear"></div>
+					</div><!-- .tab1 .tab_body -->
+
+					<div class="tab2 tab_body">
+						<h4>顾客评论</h4>
+						<ul class="comments">
+							<li>
+								<div class="autor">周水淼</div>&nbsp;&nbsp;&nbsp;<time datetime="2019-6-11">2019.6.11</time>
+
+								<div class="evaluation">
+									<div class="quality">
+										<strong>质量</strong>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a href="#"></a>
+									</div>
+									<div class="price">
+										<strong>价格</strong>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a class="plus_minus" href="#"></a>
+										<a href="#"></a>
+									</div>
+									<div class="clear"></div>
+								</div><!-- .evaluation -->
+
+								<p>好喝</br>我超级喜欢并没有牙膏的味道，可能是我的味蕾有毒</p>
+							</li>
+
+							<li>
+								<div class="autor">网址闻</div>&nbsp;&nbsp;&nbsp;<time datetime="2012-11-03">2019.6.13</time>
+
+								<div class="evaluation">
+									<div class="quality">
+										<strong>质量</strong>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a class="plus_minus" href="#"></a>
+									</div>
+									<div class="price">
+										<strong>价格</strong>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a class="plus" href="#"></a>
+										<a href="#"></a>
+									</div>
+									<div class="clear"></div>
+								</div><!-- .evaluation -->
+
+								<p>很喜欢呀，每次必回购，第一次喝还不习惯，越喝越觉得好</p>
+							</li>
+						</ul><!-- .comments -->
+
+						<form class="add_comments">
+							<h4>写下你的评价</h4>
+
+							<div class="evaluation">
+								<div class="quality">
+									<strong>质量</strong><sup class="surely"></sup>
+									<input class="niceRadio" type="radio" name="quality" value="1" /><span class="eva_num">1</span>
+									<input class="niceRadio" type="radio" name="quality" value="2" /><span class="eva_num">2</span>
+									<input class="niceRadio" type="radio" name="quality" value="3" /><span class="eva_num">3</span>
+									<input class="niceRadio" type="radio" name="quality" value="4" /><span class="eva_num">4</span>
+									<input class="niceRadio" type="radio" name="quality" value="5" /><span class="eva_num">5</span>
+								</div>
+								<div class="price">
+									<strong>价格</strong><sup class="surely"></sup>
+									<input class="niceRadio" type="radio" name="price" value="1" /><span class="eva_num">1</span>
+									<input class="niceRadio" type="radio" name="price" value="2" /><span class="eva_num">2</span>
+									<input class="niceRadio" type="radio" name="price" value="3" /><span class="eva_num">3</span>
+									<input class="niceRadio" type="radio" name="price" value="4" /><span class="eva_num">4</span>
+									<input class="niceRadio" type="radio" name="price" value="5" /><span class="eva_num">5</span>
+								</div>
+								<div class="clear"></div>
+							</div><!-- .evaluation -->
+
+							<div class="nickname">
+								<strong>用户名</strong><sup class="surely">*</sup><br/>
+								<input type="text" name="" class="" value="" />
+							</div><!-- .nickname -->
+
+							<div class="clear"></div>
+
+							<div class="text_review">
+								<strong>评论</strong><sup class="surely">*</sup><br/>
+								<textarea name="text"></textarea>
+							</div><!-- .text_review -->
+
+							<input type="submit" value="提交评价" />
+						</form><!-- .add_comments -->
+					<div class="clear"></div>
+					</div><!-- .tab2 .tab_body -->
+
+					<div class="clear"></div>
+				</div>​<!-- #wrapper_tab -->
+				<div class="clear"></div>
+			</div><!-- .grid_9 -->
+
+		</div><!-- .product_page -->
+		<div class="clear"></div>
+
+       </div><!-- #content -->
+
+      <div class="clear"></div>
+
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+
+  <footer >
+		<div class="copy">
+			<p>购买前请确认达到法定饮酒年龄！同福客栈不销售含酒精产品给18岁以下人士</br>Copyright &copy; 2019-同福客栈 版权所有</p>
+		</div>
+	</footer>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

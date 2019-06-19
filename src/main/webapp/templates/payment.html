@@ -143,7 +143,7 @@
 
 
 <footer>
-		<div style="bottom: 0;" class="copy">
+		<div style="bottom: 0; position: absolute" class="copy">
 			<p>购买前请确认达到法定饮酒年龄！同福客栈不销售含酒精产品给18岁以下人士</br>Copyright &copy; 2019-同福客栈 版权所有</p>
 		</div>
 	</footer>
@@ -211,13 +211,11 @@
                             var resultstatus = data.status;   //没有声明的需要声明这些变量，我之前声明过var ***
                             var QRCode = data.data;
                             if(resultstatus==0){
-                                alert("二维码生成成功");
                                 sessionStorage.setItem("qrCode",QRCode.qrCode);
                                 sessionStorage.setItem("orderNo",orderData.orderNo);
                                 window.location.href = "QRCode.html";
                             };
                         });
-                    alert(data.orderNo);
 
                 };
             });

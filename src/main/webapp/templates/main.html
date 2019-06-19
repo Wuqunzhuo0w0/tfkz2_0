@@ -122,7 +122,7 @@
 		   <h3 class="tittle">酒类</h3>
 			<div class="serve-grids">
 				<div class="serve-grids-top">
-					<div class="col-md-3 service-box">
+					<div onclick="mojito()" class="col-md-3 service-box">
 							<img class="img1" src="../images/莫吉托.jpg" alt="莫吉托"/>
 						<h5>莫吉托 Mojito</h5>
 						<p>莫吉托是一种由五种材料制成的鸡尾酒，最有名的朗姆调酒之一，起源于古巴。</p>
@@ -423,6 +423,9 @@
 </body>
 <script src="../js/jquery-session.js" type="text/javascript"></script>
 <script>
+	function mojito(){
+        window.location.href = "Mojito.html";
+	}
     $(document).ready(function(){
         $("#searchBtn").click(function () {
             sessionStorage.setItem("searchKey",$("#searched_content").val());
